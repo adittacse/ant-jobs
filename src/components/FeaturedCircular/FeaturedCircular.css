@@ -1,14 +1,45 @@
 .circular {
     border: 1px solid #E8E8E8;
     border-radius: 8px;
-    width: 480px;
+    width: 648px;
     height: 393px;
     padding: 40px;
 }
 
+.job-title {
+    font-size: 24px;
+    color: #474747;
+    margin-bottom: 8px;
+}
+
+.company-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #757575;
+}
+
+.remote_or_onsite {
+    padding: 9px 19px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #7E90FE;
+    outline: 1px solid #9873FF;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    cursor: default;
+}
+
 .location-salary {
+    /*margin-bottom: 24px;*/
     display: flex;
     font-size: 20px;
-    line-height: 27px;
     color: #757575;
+}
+
+.location {
+    margin-right: 24px;
 }
