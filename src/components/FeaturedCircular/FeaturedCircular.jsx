@@ -9,7 +9,7 @@ const FeaturedCircular = ({ circular }) => {
             <h3>{job_title}</h3>
             <h3>{company_name}</h3>
             <button>{remote_or_onsite}</button>
-            <div>
+            <div className="location-salary">
                 <p>{location}</p>
                 <p>{salary}</p>
             </div>

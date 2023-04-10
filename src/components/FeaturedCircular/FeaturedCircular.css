@@ -1,6 +1,14 @@
 .circular {
     border: 1px solid #E8E8E8;
     border-radius: 8px;
-    width: 648px;
+    width: 480px;
+    height: 393px;
     padding: 40px;
+}
+
+.location-salary {
+    display: flex;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
 }

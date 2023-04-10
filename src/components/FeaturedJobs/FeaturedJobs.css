@@ -1,3 +1,8 @@
+.featured-jobs-container {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
 .featured-jobs-title {
     font-size: 48px;
     text-align: center;
@@ -11,11 +16,21 @@
     margin-bottom: 32px;
 }
 
+.red {
+    background-color: red;
+}
+
 .circulars {
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     justify-content: center;
-    padding-left: 300px;
-    padding-right: 300px;
+}
+
+.btn-all-jobs {
+    display: flex;
+    margin: 0 auto 130px;
 }
