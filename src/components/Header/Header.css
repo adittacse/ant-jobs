@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.site-title {
+    font-size: 32px;
+}
+
 nav {
     width: 30%;
     /*border: 1px solid red;*/
