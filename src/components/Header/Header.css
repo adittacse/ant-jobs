@@ -1,8 +1,12 @@
 .header {
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    padding-left: 300px;
+    padding-right: 300px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
 }
 
 .site-title {
@@ -14,7 +18,7 @@ nav {
 }
 
 nav a {
-    margin-right: 20px;
+    margin-right: 10px;
     color: #757575;
 }
 
