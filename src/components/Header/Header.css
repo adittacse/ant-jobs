@@ -10,13 +10,12 @@
 }
 
 nav {
-    width: 30%;
-    /*border: 1px solid red;*/
+    display: flex;
 }
 
 nav a {
-    /*border: 1px solid red;*/
     margin-right: 20px;
+    color: #757575;
 }
 
 button {
