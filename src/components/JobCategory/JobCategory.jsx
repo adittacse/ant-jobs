@@ -6,7 +6,7 @@ const JobCategory = ({category}) => {
 
     return (
         <div className="category">
-            <img src={category.img} alt=""/>
+            <img className="category-icon" src={category.img} alt=""/>
             <h3>{name}</h3>
             <p>{jobsAvailable}+ Jobs Available</p>
         </div>
