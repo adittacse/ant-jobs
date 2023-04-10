@@ -1,0 +1,19 @@
+.category-list-container {
+
+}
+
+.category-list {
+    margin-top: 130px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 66px;
+    color: #1A1919;
+}
+
+.category-info {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    color: #757575;
+}
