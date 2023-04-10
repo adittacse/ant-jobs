@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav {
+    width: 30%;
+    /*border: 1px solid red;*/
+}
+
+nav a {
+    /*border: 1px solid red;*/
+    margin-right: 20px;
+}
+
+button {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 19px 28px;
+}
