@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "img": "https://img.icons8.com/ios/512/light-on.png",
+      "name": "Engineering",
+      "jobsAvailable": 120
+    },
+    {
+      "id": "2",
+      "img": "https://img.icons8.com/ios/512/total-sales-1.png",
+      "name": "Sales",
+      "jobsAvailable": 65
+    },
+    {
+      "id": "3",
+      "img": "https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/512/external-marketing-digital-marketing-smashingstocks-mixed-smashing-stocks-3.png",
+      "name": "Marketing",
+      "jobsAvailable": 80
+    },
+    {
+      "id": "4",
+      "img": "https://img.icons8.com/pulsar-line/512/smartphone-cpu.png",
+      "name": "Finance",
+      "jobsAvailable": 45
+    }
+  ]
+}
