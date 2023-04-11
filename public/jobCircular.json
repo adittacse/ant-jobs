@@ -1,6 +1,7 @@
 [
     {
       "id": 1,
+      "img": "",
       "job_title": "Software Engineer",
       "company_name": "ABC Inc.",
       "remote_or_onsite": "Onsite",
