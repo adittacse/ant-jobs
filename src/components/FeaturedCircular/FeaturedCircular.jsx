@@ -26,7 +26,7 @@ const FeaturedCircular = ({ circular }) => {
                 </div>
             </div>
             <Link to={`/circular/${id}`}>
-                <button >View Details</button>
+                <button>View Details</button>
             </Link>
         </div>
     );

@@ -15,7 +15,7 @@ const JobSummary = ({ job }) => {
                 <hr/>
                 <div className="job-data">
                     <img src={salaryIcon} alt="salary icon"/>
-                    <p><span className="highlighted-text">Salary:</span> {salary}</p>
+                    <p><span className="highlighted-text">Salary:</span> {salary} (Per Month)</p>
                 </div>
                 <div className="job-data">
                     <img src={jobIcon} alt="job icon"/>
