@@ -3,6 +3,8 @@ import "./FeaturedCircular.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faCoins } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+import locationIcon from "../../assets/assets/Icons/Frame.png";
+import salaryIcon from "../../assets/assets/Icons/Frame-4.png";
 
 const FeaturedCircular = ({ circular }) => {
     const {id, img, job_title, company_name, remote_or_onsite, location, salary} = circular;
@@ -14,8 +16,14 @@ const FeaturedCircular = ({ circular }) => {
             <h3 className="company-title">{company_name}</h3>
             <button className="remote_or_onsite" disabled={true}>{remote_or_onsite}</button>
             <div className="location-salary">
-                <p className="location"><FontAwesomeIcon icon={ faLocationDot } /> {location}</p>
-                <p className="salary"><FontAwesomeIcon icon={ faCoins } /> Salary: {salary}</p>
+                <div className="job-data">
+                    <img src={locationIcon} alt=""/>
+                    <p className="location">{location}</p>
+                </div>
+                <div className="job-data">
+                    <img src={salaryIcon} alt=""/>
+                    <p className="salary">Salary: {salary}</p>
+                </div>
             </div>
             <Link to={`/circular/${id}`}>
                 <button >View Details</button>

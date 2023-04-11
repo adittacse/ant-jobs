@@ -45,6 +45,11 @@
     color: #757575;
 }
 
+.job-data {
+    display: flex;
+    align-items: center;
+}
+
 .location {
     margin-right: 24px;
 }
