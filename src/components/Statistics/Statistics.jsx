@@ -63,7 +63,7 @@ const Statistics = () => {
     };
 
     return (
-        <div className="">
+        <div>
             <h2 className="page-title">Assignment Result Statistics Bar</h2>
             <div className="barchart">
                 <BarChart width={1000} height={500} data={marksArray} >
