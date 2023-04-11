@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from 'react';
 import "./JobSummary.css";
 import salaryIcon from "../../assets/assets/Icons/Frame.png";
 import jobIcon from "../../assets/assets/Icons/Frame-1.png";
