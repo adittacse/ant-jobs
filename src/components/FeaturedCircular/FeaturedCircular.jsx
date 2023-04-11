@@ -1,7 +1,5 @@
 import React from 'react';
 import "./FeaturedCircular.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faCoins } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import locationIcon from "../../assets/assets/Icons/Frame.png";
 import salaryIcon from "../../assets/assets/Icons/Frame-4.png";

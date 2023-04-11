@@ -36,9 +36,10 @@ const previouslyAppliedNotify = () => {
 
 const addToDB = (id) => {
     let getJobs = getAppliedJobs();
+    const storedJobs = localStorage.getItem('applied-jobs');
     const quantity = getJobs[id];
     if (!quantity) {
-        getJobs[id] = 1;
+        getJobs[id] = id;
         successfullyAppliedNotify();
     } else {
         previouslyAppliedNotify();

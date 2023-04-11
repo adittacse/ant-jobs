@@ -26,7 +26,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/appliedjobs",
-                element: <AppliedJobs></AppliedJobs>
+                element: <AppliedJobs></AppliedJobs>,
+                // loader: ({params}) => fetch("/jobCircular.json")
             },
             {
                 path: "/circular/:id",
