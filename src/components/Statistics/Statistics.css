@@ -1,0 +1,8 @@
+.barchart {
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+}
