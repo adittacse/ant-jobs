@@ -17,11 +17,11 @@ const FeaturedCircular = ({ circular }) => {
             <button className="remote_or_onsite" disabled={true}>{remote_or_onsite}</button>
             <div className="location-salary">
                 <div className="job-data">
-                    <img src={locationIcon} alt=""/>
+                    <img src={locationIcon} alt="location icon"/>
                     <p className="location">{location}</p>
                 </div>
                 <div className="job-data">
-                    <img src={salaryIcon} alt=""/>
+                    <img src={salaryIcon} alt="salary icon"/>
                     <p className="salary">Salary: {salary}</p>
                 </div>
             </div>
