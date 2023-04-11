@@ -1,5 +1,14 @@
+.page-title {
+    text-align: center;
+    margin: 0;
+    padding-top: 123px;
+    padding-bottom: 140px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+}
+
 .job-details {
     margin-top: 130px;
+    margin-bottom: 130px;
     padding-left: 300px;
     padding-right: 300px;
     display: flex;
