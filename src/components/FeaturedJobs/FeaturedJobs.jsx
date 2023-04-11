@@ -16,6 +16,10 @@ const FeaturedJobs = () => {
         setJobsCount(circulars.length);
     }
 
+    const loadLessJobs = () => {
+        setJobsCount(4);
+    }
+
     return (
         <div className="featured-jobs-container">
             <h2 className="featured-jobs-title">Featured jobs</h2>
@@ -26,7 +30,11 @@ const FeaturedJobs = () => {
                                                                                     circular={circular}></FeaturedCircular>)
                 }
             </div>
-            <button onClick={loadAllJobs} className="btn-all-jobs">See All Jobs</button>
+            {
+                jobsCount < circulars.length ?
+                    <button onClick={loadAllJobs} className="btn-jobs">See All Jobs</button> :
+                    <button onClick={loadLessJobs} className="btn-jobs">Show Less Jobs</button>
+            }
         </div>
     );
 };
