@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "img": "",
+      "img": "https://i.postimg.cc/4dqm48ML/google.png",
       "job_title": "Software Engineer",
       "company_name": "ABC Inc.",
       "remote_or_onsite": "Onsite",
@@ -17,6 +17,7 @@
     },
     {
       "id": 2,
+      "img": "https://i.postimg.cc/ydFT0ZHT/netflix.png",
       "job_title": "Marketing Manager",
       "company_name": "XYZ Corp.",
       "remote_or_onsite": "Remote",
@@ -32,6 +33,7 @@
     },
     {
       "id": 3,
+      "img": "https://i.postimg.cc/BQdXfwDX/tesla.png",
       "job_title": "Graphic Designer",
       "company_name": "PQR Agency",
       "remote_or_onsite": "Onsite",
@@ -47,6 +49,7 @@
     },
     {
       "id": 4,
+      "img": "https://i.postimg.cc/ydFT0ZHT/netflix.png",
       "job_title": "Graphic Designer",
       "company_name": "PQR Agency",
       "remote_or_onsite": "Onsite",
@@ -62,6 +65,7 @@
     },
     {
       "id": 5,
+      "img": "https://i.postimg.cc/4dqm48ML/google.png",
       "job_title": "Graphic Designer",
       "company_name": "PQR Agency",
       "remote_or_onsite": "Onsite",
@@ -77,6 +81,7 @@
     },
     {
       "id": 6,
+      "img": "https://i.postimg.cc/BQdXfwDX/tesla.png",
       "job_title": "Graphic Designer",
       "company_name": "PQR Agency",
       "remote_or_onsite": "Onsite",
