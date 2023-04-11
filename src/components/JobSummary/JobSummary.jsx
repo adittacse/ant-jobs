@@ -1,13 +1,27 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./JobSummary.css";
 import salaryIcon from "../../assets/assets/Icons/Frame.png";
 import jobIcon from "../../assets/assets/Icons/Frame-1.png";
 import phoneIcon from "../../assets/assets/Icons/Frame-2.png";
 import emailIcon from "../../assets/assets/Icons/Frame-3.png";
 import locationIcon from "../../assets/assets/Icons/Frame-4.png";
+import {getAppliedJobs} from "../../utilities/fakedb.js";
+
+const addToDB = (id) => {
+    let getJobs = getAppliedJobs();
+    const quantity = getJobs[id];
+    // console.log(quantity);
+    if (!quantity) {
+        getJobs[id] = 1;
+    } else {
+        // toaster
+    }
+    console.log(getJobs);
+    localStorage.setItem("applied-jobs", JSON.stringify(getJobs));
+}
 
 const JobSummary = ({ job }) => {
-    const {salary, job_title, phone, email, location} = job;
+    const {id, salary, job_title, phone, email, location} = job;
     return (
         <div>
             <div className="job-summary">
@@ -36,7 +50,7 @@ const JobSummary = ({ job }) => {
                     <p><span className="highlighted-text">Address:</span> {location}</p>
                 </div>
             </div>
-            <button className="btn-apply-now">Apply Now</button>
+            <button onClick={() => addToDB(id)} className="btn-apply-now">Apply Now</button>
         </div>
     );
 };
