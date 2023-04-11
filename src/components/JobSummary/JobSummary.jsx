@@ -34,11 +34,12 @@ const previouslyAppliedNotify = () => {
     });
 };
 
-const addToDB = (id) => {
+const addToDB = (job) => {
     let getJobs = getAppliedJobs();
-    const quantity = getJobs[id];
+    const quantity = getJobs[job];
     if (!quantity) {
-        getJobs[id] = 1;
+        // getJobs[job] = 1;
+        getJobs = job;
         successfullyAppliedNotify();
     } else {
         previouslyAppliedNotify();
@@ -76,7 +77,7 @@ const JobSummary = ({ job }) => {
                     <p><span className="highlighted-text">Address:</span> {location}</p>
                 </div>
             </div>
-            <button onClick={() => addToDB(id)} className="btn-apply-now">Apply Now</button>
+            <button onClick={() => addToDB(job)} className="btn-apply-now">Apply Now</button>
             <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false}
                             newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss
                             draggable pauseOnHover theme="colored"></ToastContainer>
