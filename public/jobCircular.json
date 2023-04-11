@@ -1,5 +1,4 @@
-{
-  "companies": [
+[
     {
       "id": 1,
       "job_title": "Software Engineer",
@@ -12,10 +11,8 @@
       "job_responsibility": "Develop and maintain high-quality software systems, participate in design and code reviews, collaborate with cross-functional teams to solve technical challenges, and contribute to the overall architecture and design of the software products.",
       "educational_requirements": "Bachelor's or Master's degree in Computer Science, Engineering, or related fields.",
       "experiences": "3+ years of software engineering experience with strong programming skills in one or more programming languages such as Java, Python, or C++.",
-      "contact_information": {
-        "phone": "+1 (123) 456-7890",
-        "email": "info@abcinc.com"
-      }
+      "phone": "+1 (123) 456-7890",
+      "email": "info@abcinc.com"
     },
     {
       "id": 2,
@@ -29,10 +26,8 @@
       "job_responsibility": "Develop and execute marketing campaigns across various channels, measure and analyze campaign performance, collaborate with cross-functional teams to create compelling marketing content, and manage relationships with external partners and vendors.",
       "educational_requirements": "Bachelor's or Master's degree in Marketing, Business, or related fields.",
       "experiences": "5+ years of marketing experience with a proven track record of driving customer acquisition and growth.",
-      "contact_information": {
-        "phone": "+1 (123) 456-7890",
-        "email": "info@xyzcorp.com"
-      }
+      "phone": "+1 (123) 456-7890",
+      "email": "info@xyzcorp.com"
     },
     {
       "id": 3,
@@ -46,10 +41,8 @@
       "job_responsibility": "Create design concepts and execute them across various mediums such as print, digital, and social media, collaborate with cross-functional teams to create compelling design solutions, and stay up-to-date with the latest design trends and tools.",
       "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Fine Arts, or related fields.",
       "experiences": "3+ years of graphic design experience with a strong portfolio that demonstrates creativity, attention to detail, and an understanding of design principles.",
-      "contact_information": {
-        "phone": "+1 (123) 456-7890",
-        "email": "info@xyzcorp.com"
-      }
+      "phone": "+1 (123) 456-7890",
+      "email": "info@xyzcorp.com"
     },
     {
       "id": 4,
@@ -63,10 +56,8 @@
       "job_responsibility": "Create design concepts and execute them across various mediums such as print, digital, and social media, collaborate with cross-functional teams to create compelling design solutions, and stay up-to-date with the latest design trends and tools.",
       "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Fine Arts, or related fields.",
       "experiences": "3+ years of graphic design experience with a strong portfolio that demonstrates creativity, attention to detail, and an understanding of design principles.",
-      "contact_information": {
-        "phone": "+1 (123) 456-7890",
-        "email": "info@xyzcorp.com"
-      }
+      "phone": "+1 (123) 456-7890",
+      "email": "info@xyzcorp.com"
     },
     {
       "id": 5,
@@ -80,10 +71,8 @@
       "job_responsibility": "Create design concepts and execute them across various mediums such as print, digital, and social media, collaborate with cross-functional teams to create compelling design solutions, and stay up-to-date with the latest design trends and tools.",
       "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Fine Arts, or related fields.",
       "experiences": "3+ years of graphic design experience with a strong portfolio that demonstrates creativity, attention to detail, and an understanding of design principles.",
-      "contact_information": {
-        "phone": "+1 (123) 456-7890",
-        "email": "info@xyzcorp.com"
-      }
+      "phone": "+1 (123) 456-7890",
+      "email": "info@xyzcorp.com"
     },
     {
       "id": 6,
@@ -97,10 +86,7 @@
       "job_responsibility": "Create design concepts and execute them across various mediums such as print, digital, and social media, collaborate with cross-functional teams to create compelling design solutions, and stay up-to-date with the latest design trends and tools.",
       "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Fine Arts, or related fields.",
       "experiences": "3+ years of graphic design experience with a strong portfolio that demonstrates creativity, attention to detail, and an understanding of design principles.",
-      "contact_information": {
-        "phone": "+1 (123) 456-7890",
-        "email": "info@xyzcorp.com"
-      }
+      "phone": "+1 (123) 456-7890",
+      "email": "info@xyzcorp.com"
     }
-  ]
-}
+]

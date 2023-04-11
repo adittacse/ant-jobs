@@ -9,7 +9,7 @@ const FeaturedJobs = () => {
     useEffect(() => {
         fetch("jobCircular.json")
             .then(res => res.json())
-            .then(data => setCircular(data.companies));
+            .then(data => setCircular(data));
     },[]);
 
     const loadAllJobs = () => {

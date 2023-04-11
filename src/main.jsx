@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
@@ -8,6 +8,8 @@ import JobHome from "./components/JobHome/JobHome.jsx";
 import Statistics from "./components/Statistics/Statistics.jsx";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
 import Blog from "./components/Blog/Blog.jsx";
+import JobDetails from "./components/JobDetails/JobDetails.jsx";
+import jobData from "../public/jobCircular.json";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,11 @@ const router = createBrowserRouter([
             {
                 path: "/appliedjobs",
                 element: <AppliedJobs></AppliedJobs>
+            },
+            {
+                path: "/circular/:id",
+                element: <JobDetails></JobDetails>,
+                loader: ({params}) => fetch("jobCircular.json")
             },
             {
                 path: "/blog",
