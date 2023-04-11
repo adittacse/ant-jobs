@@ -6,17 +6,44 @@ import phoneIcon from "../../assets/assets/Icons/Frame-2.png";
 import emailIcon from "../../assets/assets/Icons/Frame-3.png";
 import locationIcon from "../../assets/assets/Icons/Frame-4.png";
 import {getAppliedJobs} from "../../utilities/fakedb.js";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const successfullyAppliedNotify = () => {
+    toast.success("Application Applied Successfully!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
+};
+
+const previouslyAppliedNotify = () => {
+    toast.error("Already Applied In This Job!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
+};
 
 const addToDB = (id) => {
     let getJobs = getAppliedJobs();
     const quantity = getJobs[id];
-    // console.log(quantity);
     if (!quantity) {
         getJobs[id] = 1;
+        successfullyAppliedNotify();
     } else {
-        // toaster
+        previouslyAppliedNotify();
     }
-    console.log(getJobs);
     localStorage.setItem("applied-jobs", JSON.stringify(getJobs));
 }
 
@@ -51,6 +78,9 @@ const JobSummary = ({ job }) => {
                 </div>
             </div>
             <button onClick={() => addToDB(id)} className="btn-apply-now">Apply Now</button>
+            <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false}
+                            newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss
+                            draggable pauseOnHover theme="colored"></ToastContainer>
         </div>
     );
 };
