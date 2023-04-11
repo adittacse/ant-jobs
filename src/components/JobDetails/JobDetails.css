@@ -17,3 +17,13 @@
 .job-info {
     padding-right: 24px;
 }
+
+.job-info-description {
+    font-weight: 800;
+    font-size: 16px;
+    color: #1A1919;
+}
+
+.job-info p {
+    color: #757575;
+}

@@ -5,6 +5,35 @@
     border-radius: 8px;
 }
 
+.job-summary h2 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #1A1919;
+}
+
+.job-data {
+    display: flex;
+    align-items: center;
+}
+
+.job-data p::before {
+    content: "\00a0 ";
+}
+
+.job-data p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+}
+
+.highlighted-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #474747;
+}
+
 .btn-apply-now {
     margin-top: 24px;
     width: 100%;

@@ -18,10 +18,16 @@ const JobDetails = () => {
             <h1 className="page-title">Job Details</h1>
             <div className="job-details">
                 <div className="job-info">
-                    <p><b>Job Description:</b> {job.job_description}</p>
-                    <p><b>Job Responsibility:</b> {job.job_responsibility}</p>
-                    <p><b>Educational Requirements:</b> {job.educational_requirements}</p>
-                    <p><b>Experiences:</b> {job.experiences}</p>
+                    <p><span className="job-info-description">Job Description:</span> {job.job_description}</p>
+                    <p><span className="job-info-description">Job Responsibility:</span> {job.job_responsibility}</p>
+                    <div>
+                        <span className="job-info-description">Educational Requirements:</span>
+                        <p>{job.educational_requirements}</p>
+                    </div>
+                    <div>
+                        <span className="job-info-description">Experiences:</span>
+                        <p>{job.experiences}</p>
+                    </div>
                 </div>
                 <div>
                     <JobSummary key={job.id} job={job}></JobSummary>
