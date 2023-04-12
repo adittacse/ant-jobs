@@ -1,6 +1,7 @@
 import DisplayAppliedJob from "../DisplayAppliedJob/DisplayAppliedJob.jsx";
 import "./AppliedJobs.css";
 import React, {useEffect, useState} from "react";
+import jobsData from "../../../public/jobCircular.json";
 
 const AppliedJobs = () => {
     const getAppliedJobs = () => {
@@ -15,13 +16,17 @@ const AppliedJobs = () => {
 
     const appliedJobs = getAppliedJobs();
 
+    const filterJobs = (filter) => {
+        const filteredJobs = jobsData.filter((job) => job.type === filter);
+        setDisplayedJobs(filteredJobs);
+    };
+
     return (
         <div>
             <h1 className="page-title">Applied Jobs</h1>
             <div className="page-area">
                 <div className="job-status-filter">
-                    <button>lol</button>
-                    <button className="btn-remote">Remote</button>
+                    <button onClick={filterJobs("Remote")} className="btn-remote">Remote</button>
                     <button className="btn-full-time">Full Time</button>
                 </div>
                 <div className="jobs">

@@ -24,7 +24,7 @@
     flex-grow: 1;
 }
 
-.remote_or_onsite {
+.remote_or_onsite, .fulltime_or_parttime {
     padding: 9px 19px;
     font-size: 16px;
     border-radius: 4px;

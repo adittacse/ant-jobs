@@ -5,7 +5,7 @@ import locationIcon from "../../assets/assets/Icons/Frame.png";
 import salaryIcon from "../../assets/assets/Icons/Frame-4.png";
 
 const FeaturedCircular = ({ circular }) => {
-    const {id, img, job_title, company_name, remote_or_onsite, location, salary} = circular;
+    const {id, img, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary} = circular;
 
     return (
         <div className="circular">
@@ -13,6 +13,7 @@ const FeaturedCircular = ({ circular }) => {
             <h3 className="job-title">{job_title}</h3>
             <h3 className="company-title">{company_name}</h3>
             <button className="remote_or_onsite" disabled={true}>{remote_or_onsite}</button>
+            <button className="fulltime_or_parttime" disabled={true}>{fulltime_or_parttime}</button>
             <div className="location-salary">
                 <div className="job-data">
                     <img src={locationIcon} alt="location icon"/>

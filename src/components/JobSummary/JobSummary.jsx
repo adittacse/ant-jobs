@@ -34,17 +34,20 @@ const previouslyAppliedNotify = () => {
     });
 };
 
-const addToDB = (id) => {
-    let getJobs = getAppliedJobs();
-    const storedJobs = localStorage.getItem('applied-jobs');
-    const quantity = getJobs[id];
-    if (!quantity) {
-        getJobs[id] = id;
-        successfullyAppliedNotify();
-    } else {
+const addToDB = (job) => {
+    // let getJobs = getAppliedJobs();
+    // const storedJobs = localStorage.getItem('applied-jobs');
+    const existingJobs = JSON.parse(localStorage.getItem("applied-jobs")) || [];
+    const duplicateJob = existingJobs.find(item => item.id == job.id);
+
+    if (duplicateJob) {
         previouslyAppliedNotify();
+    } else {
+        // Add the job object to local storage if it doesn't already exist
+        existingJobs.push(job);
+        localStorage.setItem("applied-jobs", JSON.stringify(existingJobs));
+        successfullyAppliedNotify();
     }
-    localStorage.setItem("applied-jobs", JSON.stringify(getJobs));
 }
 
 const JobSummary = ({ job }) => {
@@ -77,7 +80,7 @@ const JobSummary = ({ job }) => {
                     <p><span className="highlighted-text">Address:</span> {location}</p>
                 </div>
             </div>
-            <button onClick={() => addToDB(id)} className="btn-apply-now">Apply Now</button>
+            <button onClick={() => addToDB(job)} className="btn-apply-now">Apply Now</button>
             <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false}
                             newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss
                             draggable pauseOnHover theme="colored"></ToastContainer>
