@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import locationIcon from "../../assets/assets/Icons/Frame.png";
 import salaryIcon from "../../assets/assets/Icons/Frame-4.png";
 
-const DisplayAppliedJob = ({ jobId }) => {
-    const {id, img, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary} = jobId;
+const DisplayAppliedJob = ({ job }) => {
+    const {id, img, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary} = job;
 
     return (
         <div className="applied-job">

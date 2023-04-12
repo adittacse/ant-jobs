@@ -15,7 +15,7 @@ const AppliedJobs = () => {
 
     const appliedJobs = getAppliedJobs();
 
-    const [displayedJobs, setDisplayedJobs] = useState(getAppliedJobs());
+    const [displayedJobs, setDisplayedJobs] = useState(appliedJobs);
 
     const filterJobs = (filter) => {
         const filteredJobs = appliedJobs.filter((job) => job.remote_or_onsite == filter);
@@ -34,8 +34,8 @@ const AppliedJobs = () => {
                 </div>
                 <div className="jobs">
                     {
-                        displayedJobs.map((value) => (
-                            <DisplayAppliedJob key={value.id} jobId={value}></DisplayAppliedJob>))
+                        displayedJobs.map((job) => (
+                            <DisplayAppliedJob key={job.id} job={job}></DisplayAppliedJob>))
                     }
                 </div>
             </div>
