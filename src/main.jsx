@@ -29,12 +29,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/appliedjobs",
-                element: <AppliedJobs></AppliedJobs>,
-                // loader: ({params}) => fetch("/jobCircular.json")
-            },
-            {
-                path: "/apptest",
-                element: <AppTest></AppTest>
+                element: <AppliedJobs></AppliedJobs>
             },
             {
                 path: "/circular/:id",
