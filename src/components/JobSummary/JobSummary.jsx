@@ -4,7 +4,6 @@ import jobIcon from "../../assets/assets/Icons/Frame-1.png";
 import phoneIcon from "../../assets/assets/Icons/Frame-2.png";
 import emailIcon from "../../assets/assets/Icons/Frame-3.png";
 import locationIcon from "../../assets/assets/Icons/Frame-4.png";
-import {getAppliedJobs} from "../../utilities/fakedb.js";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

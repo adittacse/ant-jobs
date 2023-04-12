@@ -1,7 +1,6 @@
 import DisplayAppliedJob from "../DisplayAppliedJob/DisplayAppliedJob.jsx";
 import "./AppliedJobs.css";
-import React, { useEffect, useState } from "react";
-import jobsData from "../../../public/jobCircular.json";
+import React, { useState } from "react";
 
 const AppliedJobs = () => {
     const getAppliedJobs = () => {
@@ -15,7 +14,6 @@ const AppliedJobs = () => {
     };
 
     const appliedJobs = getAppliedJobs();
-    // console.log(job)
 
     const [displayedJobs, setDisplayedJobs] = useState(getAppliedJobs());
 

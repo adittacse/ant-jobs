@@ -1,5 +1,5 @@
 import React from 'react';
-import {BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, LineChart, ResponsiveContainer, Tooltip} from 'recharts';
+import {BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
 import { scaleOrdinal } from "d3-scale";
 import { schemeCategory10 } from "d3-scale-chromatic";
 import "./Statistics.css";
