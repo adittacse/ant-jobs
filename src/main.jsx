@@ -10,6 +10,7 @@ import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import JobDetails from "./components/JobDetails/JobDetails.jsx";
 import jobData from "../public/jobCircular.json";
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
                 path: "/blog",
                 element: <Blog></Blog>
             },
+            {
+                path: "*",
+                element: <ErrorPage></ErrorPage>
+            }
         ]
     },
 ]);
