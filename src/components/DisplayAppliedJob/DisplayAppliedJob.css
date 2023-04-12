@@ -10,14 +10,8 @@
     margin-bottom: 24px;
 }
 .logo-container {
-    /*width: 240px;*/
-    /*height: 240px;*/
-    /*padding: 95px 47px;*/
     background: #F4F4F4;
     border-radius: 8px;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*margin: 0 auto;*/
 }
 
 .logo {
@@ -29,8 +23,6 @@
 .company-info {
     margin-left: 32px;
     flex-grow: 1;
-    /*display: block;*/
-    /*align-items: center;*/
 }
 
 .location-salary {
