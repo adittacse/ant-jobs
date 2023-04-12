@@ -23,8 +23,8 @@ const DisplayAppliedJob = ({ jobId }) => {
                 <img className="logo" src={img} alt=""/>
             </div>
             <div className="company-info">
-                <p>{company_name}</p>
-                <p>{job_title}</p>
+                <h3 className="job-title">{job_title}</h3>
+                <h3 className="company-title">{company_name}</h3>
                 <button className="remote_or_onsite" disabled={true}>{remote_or_onsite}</button>
                 <div className="location-salary">
                     <div className="job-data">
