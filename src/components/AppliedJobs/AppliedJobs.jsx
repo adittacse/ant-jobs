@@ -1,5 +1,6 @@
 import DisplayAppliedJob from "../DisplayAppliedJob/DisplayAppliedJob.jsx";
 import "./AppliedJobs.css";
+import React from "react";
 
 const AppliedJobs = () => {
     const getAppliedJobs = () => {
@@ -18,9 +19,15 @@ const AppliedJobs = () => {
         <div>
             <h1 className="page-title">Applied Jobs</h1>
             <div className="page-area">
-                {
-                    appliedJobs.map(value => <DisplayAppliedJob key={value} jobId={value}></DisplayAppliedJob>)
-                }
+                <div className="job-status-filter">
+                    <button className="btn-remote">Remote</button>
+                    <button className="btn-full-time">Full Time</button>
+                </div>
+                <div>
+                    {
+                        appliedJobs.map(value => <DisplayAppliedJob key={value} jobId={value}></DisplayAppliedJob>)
+                    }
+                </div>
             </div>
         </div>
     );
