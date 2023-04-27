@@ -1,6 +1,6 @@
 import DisplayAppliedJob from "../DisplayAppliedJob/DisplayAppliedJob.jsx";
 import "./AppliedJobs.css";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 
 const AppliedJobs = () => {
     const getAppliedJobs = () => {
@@ -11,7 +11,6 @@ const AppliedJobs = () => {
         else if (storedJobs) {
             const jobs = JSON.parse(storedJobs);
             const jobIds = Object.values(jobs);
-            console.log(jobIds)
             return jobIds;
         }
         return {};
@@ -20,10 +19,6 @@ const AppliedJobs = () => {
     const appliedJobs = getAppliedJobs();
 
     const [displayedJobs, setDisplayedJobs] = useState(appliedJobs);
-
-    useEffect( () => {
-        // console.log(typeof appliedJobs)
-    }, []);
 
     const filterJobs = (filter) => {
         const filteredJobs = appliedJobs.filter((job) => job.remote_or_onsite == filter || []);
