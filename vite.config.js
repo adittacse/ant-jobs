@@ -7,10 +7,10 @@ export default defineConfig({
   base: "/Stakepool-Frontend/",
   plugins: [react()],
   resolve: {
-    alias: {
-      // "~": path.resolve(__dirname, "node_modules"),
-      // "@": path.resolve(__dirname, "src"),
-    },
+    // alias: {
+    //   "~": path.resolve(__dirname, "node_modules"),
+    //   "@": path.resolve(__dirname, "src"),
+    // },
   },
   build: {
     chunkSizeWarningLimit: 1600,
