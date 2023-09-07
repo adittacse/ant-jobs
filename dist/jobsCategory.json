@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "img": "https://i.postimg.cc/7Lstt7GM/accounts-1.png",
+      "name": "Engineering",
+      "jobsAvailable": 120
+    },
+    {
+      "id": "2",
+      "img": "https://i.postimg.cc/C5DvKQvm/business-1.png",
+      "name": "Sales",
+      "jobsAvailable": 65
+    },
+    {
+      "id": "3",
+      "img": "https://i.postimg.cc/RF2s4BTW/chip-1.png",
+      "name": "Marketing",
+      "jobsAvailable": 80
+    },
+    {
+      "id": "4",
+      "img": "https://i.postimg.cc/c18kTvsw/social-media-1.png",
+      "name": "Finance",
+      "jobsAvailable": 45
+    }
+  ]
+}
